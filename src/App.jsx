@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TextInput from "./components/TextInput.jsx";
 import "./index.css";
+import TodoItem from "./components/TodoItem.jsx";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -23,7 +24,13 @@ function App() {
       />
       <ul className="flex flex-col items-center">
         {todos.map((todo, index) => (
-          <li key={index}>{todo}</li>
+          <TodoItem
+            todo={todo}
+            index={index}
+            todos={todos}
+            setTodos={setTodos}
+            key={index}
+          />
         ))}
       </ul>
     </div>
