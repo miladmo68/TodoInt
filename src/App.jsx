@@ -5,11 +5,12 @@ import "./index.css";
 function App() {
   const [todos, setTodos] = useState([]);
   const [inputValue, setInputValue] = useState("");
+  console.log(inputValue);
 
   return (
     <div className="flex flex-col items-center justify-center gap-3  mt-7 ">
       <h1>Todo App</h1>
-      <TextInput />
+      <TextInput inputValue={inputValue} setInputValue={setInputValue} />
     </div>
   );
 }
