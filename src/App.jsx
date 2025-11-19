@@ -31,7 +31,7 @@ function App() {
 
           {todos.length === 0 ? (
             <p className="text-slate-300 text-sm text-center">
-              هنوز کاری اضافه نکردی. یه کار جدید بنویس و Add رو بزن ✏️
+              Your list is empty. Add your first task ✏️
             </p>
           ) : (
             <ul className="flex flex-col gap-2">
